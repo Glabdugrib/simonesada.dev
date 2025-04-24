@@ -1,3 +1,9 @@
 {
-  "tailwindStylesheet": "~/assets/css/main.css"
+   "tailwindStylesheet": "~/assets/css/main.css",
+   "semi": true,
+   "tabWidth": 3,
+   "singleQuote": true,
+   "printWidth": 100,
+   "jsonRecursiveSort": true,
+   "plugins": ["prettier-plugin-tailwindcss"]
 }
