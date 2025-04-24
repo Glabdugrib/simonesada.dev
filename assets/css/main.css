@@ -1,1 +1,5 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+.debug {
+   @apply border border-dashed border-red-500;
+}
