@@ -13,6 +13,7 @@
    },
    "dependencies": {
       "@nuxt/content": "^3.6.1",
+      "@tailwindcss/typography": "^0.5.16",
       "@tailwindcss/vite": "^4.1.10",
       "better-sqlite3": "^11.10.0",
       "nuxt": "^3.17.5",
