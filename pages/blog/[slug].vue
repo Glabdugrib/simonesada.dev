@@ -8,5 +8,9 @@ console.log('POST:', post);
 </script>
 
 <template>
-   <ContentRenderer :value="post" />
+   <div class="px-4 pb-16 pt-8 antialiased lg:pb-24 lg:pt-16">
+      <article class="prose lg:prose-xl mx-auto">
+         <ContentRenderer :value="post" />
+      </article>
+   </div>
 </template>
