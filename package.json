@@ -12,16 +12,18 @@
       "format": "prettier --write ."
    },
    "dependencies": {
-      "@tailwindcss/vite": "^4.1.4",
-      "nuxt": "^3.16.2",
-      "tailwindcss": "^4.1.4",
-      "vue": "^3.5.13",
-      "vue-router": "^4.5.0"
+      "@nuxt/content": "^3.6.1",
+      "@tailwindcss/vite": "^4.1.10",
+      "better-sqlite3": "^11.10.0",
+      "nuxt": "^3.17.5",
+      "tailwindcss": "^4.1.10",
+      "vue": "^3.5.17",
+      "vue-router": "^4.5.1"
    },
    "packageManager": "pnpm@10.9.0",
    "devDependencies": {
       "husky": "^9.1.7",
       "prettier": "^3.5.3",
-      "prettier-plugin-tailwindcss": "^0.6.11"
+      "prettier-plugin-tailwindcss": "^0.6.13"
    }
 }
