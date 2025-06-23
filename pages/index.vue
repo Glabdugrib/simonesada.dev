@@ -9,9 +9,5 @@ const getRandomArbitrary = (min: number, max: number) => {
 
 <template>
    <TheHeroSection />
-   <MarqueeDivider
-      :strings="['CODE', 'PLAY', 'EXPERIMENT', 'REPEAT']"
-      divider="✱"
-      :speed="1"
-   />
+   <MarqueeDivider :strings="['CODE', 'PLAY', 'EXPERIMENT', 'REPEAT']" divider="✱" :speed="1" />
 </template>
