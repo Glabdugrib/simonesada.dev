@@ -9,4 +9,16 @@ export default defineNuxtConfig({
       plugins: [tailwindcss()],
    },
    modules: ['@nuxt/content'],
+   content: {
+      build: {
+         markdown: {
+            highlight: {
+               theme: 'synthwave-84',
+            },
+         },
+      },
+      renderer: {
+         anchorLinks: false,
+      },
+   },
 });
