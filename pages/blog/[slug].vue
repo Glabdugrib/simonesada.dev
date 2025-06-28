@@ -39,6 +39,18 @@ console.log('POST:', post);
             <p class="text-gray-500">{{ post?.description }}</p>
          </header>
 
+         <!-- Cover -->
+         <figure>
+            <img
+               src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png"
+               alt="Digital art by Anonymous"
+               class="mt-6 w-full rounded-lg object-cover shadow-lg"
+            />
+            <!-- <figcaption class="text-center text-sm text-gray-500">
+                  Digital art by Anonymous
+               </figcaption> -->
+         </figure>
+
          <!-- Content -->
          <ContentRenderer :value="post" />
       </article>
