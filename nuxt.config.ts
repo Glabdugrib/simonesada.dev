@@ -15,6 +15,10 @@ export default defineNuxtConfig({
             highlight: {
                theme: 'synthwave-84',
             },
+            toc: {
+               depth: 3,
+               searchDepth: 3,
+            },
          },
       },
       renderer: {

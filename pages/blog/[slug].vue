@@ -51,6 +51,27 @@ console.log('POST:', post);
                </figcaption> -->
          </figure>
 
+         <!-- Table of Contents -->
+         <nav
+            v-if="post?.body?.toc?.links?.length"
+            class="font-inter mb-8 rounded-lg bg-stone-100 p-8"
+         >
+            <h2 class="!mt-0 !text-xl text-stone-700">Table of Contents:</h2>
+            <ul class="!m-0 space-y-1">
+               <li
+                  v-for="link in post.body.toc.links"
+                  :key="link.id"
+                  class="list-disc py-1 text-sm marker:text-orange-400"
+               >
+                  <a
+                     :href="`#${link.id}`"
+                     class="font-normal tracking-wider text-stone-600 no-underline hover:text-orange-400"
+                     >{{ link.text.toUpperCase() }}</a
+                  >
+               </li>
+            </ul>
+         </nav>
+
          <!-- Content -->
          <ContentRenderer :value="post" />
       </article>
