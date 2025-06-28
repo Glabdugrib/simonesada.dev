@@ -16,6 +16,7 @@
       "@tailwindcss/typography": "^0.5.16",
       "@tailwindcss/vite": "^4.1.10",
       "better-sqlite3": "^11.10.0",
+      "dayjs": "^1.11.13",
       "nuxt": "^3.17.5",
       "tailwindcss": "^4.1.10",
       "vue": "^3.5.17",
