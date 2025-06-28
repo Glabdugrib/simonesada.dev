@@ -21,4 +21,11 @@ export default defineNuxtConfig({
          anchorLinks: false,
       },
    },
+   app: {
+      head: {
+         htmlAttrs: {
+            class: 'scroll-smooth',
+         },
+      },
+   },
 });
