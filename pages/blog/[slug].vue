@@ -74,6 +74,19 @@ console.log('POST:', post);
 
          <!-- Content -->
          <ContentRenderer :value="post" />
+
+         <!-- Footer -->
+         <footer class="mt-8 flex items-center gap-6 border-t border-gray-200 lg:mt-16 lg:pt-4">
+            <img
+               src="https://media.licdn.com/dms/image/v2/D4E03AQFzLpDcfX-Kdw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1696547326687?e=2147483647&v=beta&t=wSnY_eQK6ztRmT8TZadVtAQ1OhQg9lGJpq4JCKz3tZc"
+               alt="Author avatar"
+               class="w-18 h-18 rounded-full object-cover"
+            />
+            <div>
+               <p class="text-md !my-0 font-semibold text-gray-900">Simone Sada</p>
+               <p class="text-md !my-0 text-gray-500">Full-Stack Engineer</p>
+            </div>
+         </footer>
       </article>
    </div>
 </template>
