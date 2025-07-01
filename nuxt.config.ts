@@ -1,5 +1,5 @@
 import tailwindcss from '@tailwindcss/vite';
-import { injectReadingTime } from './utils/content/hooks.js';
+import { injectReadingTime, injectAuthorMeta } from './utils/content/hooks.js';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -35,6 +35,9 @@ export default defineNuxtConfig({
       },
    },
    hooks: {
-      'content:file:afterParse': injectReadingTime,
+      'content:file:afterParse': (ctx) => {
+         injectReadingTime(ctx);
+         injectAuthorMeta(ctx);
+      },
    },
 });
