@@ -1,10 +1,32 @@
-<script setup>
+<script setup lang="ts">
+import type { BlogCollectionItem } from '@nuxt/content';
 import dayjs from 'dayjs';
+import { blogSchema } from '~/utils/schema/blog';
 
 const slug = useRoute().params.slug;
-const { data: post } = await useAsyncData(`blog-${slug}`, () =>
-   queryCollection('blog').path(`/blog/${slug}`).first(),
+const blogCollection = await useAsyncData(`blog-${slug}`, () =>
+   queryCollection('blog').path(`/blog/${slug}`).where('draft', '=', false).first(),
 );
+
+const post: BlogCollectionItem | null = blogCollection.data.value;
+
+if (!post) {
+   throw createError({
+      statusCode: 404,
+      statusMessage: 'Ops! The post you are looking for does not exist.',
+   });
+}
+
+const result = blogSchema.safeParse(post);
+
+if (!result.success) {
+   console.error('Invalid post data:', result.error);
+   throw createError({
+      statusCode: 500,
+      statusMessage: 'Ops! The post data is not valid.',
+   });
+}
+
 console.log('SLUG:', slug);
 console.log('POST:', post);
 </script>
@@ -15,7 +37,7 @@ console.log('POST:', post);
          <!-- Header -->
          <header class="mb-10">
             <!-- Title -->
-            <h1 class="!mb-5 text-4xl font-extrabold">{{ post?.title }}</h1>
+            <h1 class="!mb-5 text-4xl font-extrabold">{{ post.title }}</h1>
 
             <!-- Tags -->
             <div class="mb-2 flex flex-wrap gap-2">
@@ -30,13 +52,13 @@ console.log('POST:', post);
 
             <!-- Meta info -->
             <div class="space-x-2 text-sm text-gray-500">
-               <span>{{ dayjs().format('MMMM D, YYYY') }}</span>
+               <span>{{ dayjs(post.meta.created_at).format('MMMM D, YYYY') }}</span>
                <span>•</span>
-               <span>5 min read</span>
+               <span>{{ post.meta.reading_time }} min read</span>
             </div>
 
             <!-- Description -->
-            <p class="text-gray-500">{{ post?.description }}</p>
+            <p class="text-gray-500">{{ post.description }}</p>
          </header>
 
          <!-- Cover -->
@@ -53,13 +75,13 @@ console.log('POST:', post);
 
          <!-- Table of Contents -->
          <nav
-            v-if="post?.body?.toc?.links?.length"
-            class="font-inter mb-8 rounded-lg bg-stone-100 p-8"
+            v-if="post.body?.toc?.links?.length"
+            class="font-inter mb-8 rounded-lg bg-stone-200 p-8"
          >
             <h2 class="!mt-0 !text-xl text-stone-700">Table of Contents:</h2>
             <ul class="!m-0 space-y-1">
                <li
-                  v-for="link in post.body.toc.links"
+                  v-for="link in post.body?.toc?.links"
                   :key="link.id"
                   class="list-disc py-1 text-sm marker:text-orange-400"
                >
@@ -78,13 +100,15 @@ console.log('POST:', post);
          <!-- Footer -->
          <footer class="mt-8 flex items-center gap-6 border-t border-gray-200 lg:mt-16 lg:pt-4">
             <img
-               src="https://media.licdn.com/dms/image/v2/D4E03AQFzLpDcfX-Kdw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1696547326687?e=2147483647&v=beta&t=wSnY_eQK6ztRmT8TZadVtAQ1OhQg9lGJpq4JCKz3tZc"
+               :src="post.meta.author_avatar"
                alt="Author avatar"
                class="w-18 h-18 rounded-full object-cover"
             />
             <div>
-               <p class="text-md !my-0 font-semibold text-gray-900">Simone Sada</p>
-               <p class="text-md !my-0 text-gray-500">Full-Stack Engineer</p>
+               <p class="text-md !my-0 font-semibold text-gray-900">
+                  {{ post.meta.author }}
+               </p>
+               <p class="text-md !my-0 text-gray-500">{{ post.meta.author_bio }}</p>
             </div>
          </footer>
       </article>
