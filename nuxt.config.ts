@@ -1,4 +1,5 @@
 import tailwindcss from '@tailwindcss/vite';
+import { injectReadingTime } from './utils/content/hooks.js';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -31,5 +32,8 @@ export default defineNuxtConfig({
             class: 'scroll-smooth',
          },
       },
+   },
+   hooks: {
+      'content:file:afterParse': injectReadingTime,
    },
 });
