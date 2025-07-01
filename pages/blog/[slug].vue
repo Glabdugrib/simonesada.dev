@@ -52,9 +52,9 @@ console.log('POST:', post);
 
             <!-- Meta info -->
             <div class="space-x-2 text-sm text-gray-500">
-               <span>{{ dayjs(post.meta.created_at).format('MMMM D, YYYY') }}</span>
+               <span>{{ dayjs(post.meta.createdAt).format('MMMM D, YYYY') }}</span>
                <span>•</span>
-               <span>{{ post.meta.reading_time }} min read</span>
+               <span>{{ post.meta.readingTime }} min read</span>
             </div>
 
             <!-- Description -->
@@ -100,15 +100,15 @@ console.log('POST:', post);
          <!-- Footer -->
          <footer class="mt-8 flex items-center gap-6 border-t border-gray-200 lg:mt-16 lg:pt-4">
             <img
-               :src="post.meta.author_avatar"
+               :src="post.meta.author.avatar"
                alt="Author avatar"
                class="w-18 h-18 rounded-full object-cover"
             />
             <div>
                <p class="text-md !my-0 font-semibold text-gray-900">
-                  {{ post.meta.author }}
+                  {{ post.meta.author.fullName }}
                </p>
-               <p class="text-md !my-0 text-gray-500">{{ post.meta.author_bio }}</p>
+               <p class="text-md !my-0 text-gray-500">{{ post.meta.author.bio }}</p>
             </div>
          </footer>
       </article>
