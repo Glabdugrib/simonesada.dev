@@ -15,6 +15,7 @@ export default defineNuxtConfig({
          markdown: {
             highlight: {
                theme: 'synthwave-84',
+               langs: ['go'],
             },
             toc: {
                depth: 3,
