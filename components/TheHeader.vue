@@ -1,14 +1,19 @@
+<script setup lang="ts">
+import TheLogo from './TheLogo.vue';
+</script>
+
 <template>
    <header>
       <nav class="border-gray-200 bg-white px-4 py-2.5 lg:px-6">
          <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
-            <a href="https://flowbite.com" class="flex items-center">
-               <img
-                  src="https://www.svgrepo.com/show/437018/hexagon.svg"
-                  class="mr-3 h-6 sm:h-9"
-                  alt="Simone Sada logo"
+            <a href="/" class="group flex items-center gap-4 pe-2">
+               <TheLogo
+                  class="h-10 transition-all duration-300 group-hover:animate-spin group-hover:text-orange-600"
                />
-               <span class="self-center whitespace-nowrap text-xl font-semibold">Simone Sada</span>
+               <span
+                  class="font-audiowide text-shadow-sm group-hover:text-shadow-md self-center whitespace-nowrap text-2xl tracking-wider group-hover:text-stone-800"
+                  >Simone Sada</span
+               >
             </a>
 
             <div class="flex items-center lg:order-2">
