@@ -6,14 +6,17 @@ import TheLogo from './TheLogo.vue';
    <header>
       <nav class="border-gray-200 bg-white px-4 py-2.5 lg:px-6">
          <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
-            <a href="/" class="group flex items-center gap-4 pe-2">
-               <TheLogo
-                  class="h-10 transition-all duration-300 group-hover:animate-spin group-hover:text-orange-600"
-               />
+            <a
+               href="/"
+               class="hover:scale-102 group flex items-center gap-3 pe-2 transition-all duration-300"
+            >
+               <TheLogo class="h-7 text-orange-600 group-hover:animate-spin" />
                <span
-                  class="font-audiowide text-shadow-sm group-hover:text-shadow-md self-center whitespace-nowrap text-2xl tracking-wider group-hover:text-stone-800"
-                  >Simone Sada</span
+                  class="font-red-hat-display text-shadow-sm text-md mb-[2px] self-center whitespace-nowrap tracking-widest"
                >
+                  <span class="font-semibold group-hover:text-stone-800">SIMONE SADA</span>
+                  <span class="font-bold text-orange-600">.dev</span>
+               </span>
             </a>
 
             <div class="flex items-center lg:order-2">
