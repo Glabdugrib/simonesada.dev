@@ -6,14 +6,16 @@ import TheLogo from './TheLogo.vue';
    <header>
       <nav class="border-gray-200 bg-white px-4 py-2.5 lg:px-6">
          <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
+            <!-- Logo and title -->
             <a
                href="/"
-               class="hover:scale-102 group flex items-center gap-3 pe-2 transition-all duration-300"
+               class="hover:scale-102 focus group flex items-center gap-3 p-1 pe-2 transition-all duration-300"
             >
                <TheLogo class="h-7 text-orange-600 group-hover:animate-spin" />
                <span
                   class="font-red-hat-display text-shadow-sm text-md mb-[2px] self-center whitespace-nowrap tracking-widest"
                >
+                  <!-- span sopra => 2xs:block hidden -->
                   <span class="font-semibold group-hover:text-stone-800">SIMONE SADA</span>
                   <span class="font-bold text-orange-600">.dev</span>
                </span>
