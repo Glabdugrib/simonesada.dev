@@ -44,7 +44,7 @@ console.log('POST:', post);
                <span
                   v-for="tag in ['tailwind', 'ui', 'flowbite', 'prototyping']"
                   :key="tag"
-                  class="rounded-full bg-orange-100 px-2 py-1 text-xs font-medium text-orange-600"
+                  class="rounded-full bg-orange-100 px-2.5 py-1 text-xs font-medium text-orange-600"
                >
                   {{ tag.toUpperCase() }}
                </span>
@@ -87,7 +87,7 @@ console.log('POST:', post);
                >
                   <a
                      :href="`#${link.id}`"
-                     class="font-normal tracking-wider text-stone-600 no-underline hover:text-orange-400"
+                     class="focus py-1 font-normal tracking-wider text-stone-600 no-underline transition-colors duration-150 hover:text-orange-400"
                      >{{ link.text.toUpperCase() }}</a
                   >
                </li>

@@ -9,15 +9,15 @@ import TheLogo from './TheLogo.vue';
             <!-- Logo and title -->
             <a
                href="/"
-               class="hover:scale-102 focus group flex items-center gap-3 p-1 pe-2 transition-all duration-300"
+               class="focus group flex items-center gap-3 p-1 pe-2 transition-all duration-300"
             >
                <TheLogo class="h-7 text-orange-600 group-hover:animate-spin" />
                <span
                   class="font-red-hat-display text-shadow-sm text-md mb-[2px] self-center whitespace-nowrap tracking-widest"
                >
                   <!-- span sopra => 2xs:block hidden -->
-                  <span class="font-semibold group-hover:text-stone-800">SIMONE SADA</span>
-                  <span class="font-bold text-orange-600">.dev</span>
+                  <span class="font-semibold group-hover:text-stone-700">SIMONE SADA</span>
+                  <span class="font-bold text-orange-600 group-hover:text-orange-500">.dev</span>
                </span>
             </a>
 
@@ -25,7 +25,7 @@ import TheLogo from './TheLogo.vue';
             <button
                data-collapse-toggle="navbar-default"
                type="button"
-               class="focus cursor-pointer items-center justify-center rounded-lg p-2 text-sm text-stone-600 transition-colors duration-150 hover:text-orange-600 sm:hidden"
+               class="focus cursor-pointer items-center justify-center rounded-lg p-2 text-sm text-stone-600 transition-colors duration-150 hover:text-orange-400 sm:hidden"
                aria-controls="navbar-default"
                aria-expanded="false"
             >
@@ -51,17 +51,17 @@ import TheLogo from './TheLogo.vue';
             <div class="hidden items-center gap-2 sm:flex lg:order-2">
                <a
                   href="/#about"
-                  class="focus rounded-lg px-4 py-2 text-sm font-medium text-gray-800 transition-colors duration-150 hover:text-orange-600 lg:px-5 lg:py-2.5"
+                  class="focus rounded-lg px-4 py-2 text-sm font-medium text-gray-800 transition-colors duration-150 hover:text-orange-400 lg:px-5 lg:py-2.5"
                   >About</a
                >
                <a
                   href="/blog"
-                  class="focus rounded-lg px-4 py-2 text-sm font-medium text-gray-800 transition-colors duration-150 hover:text-orange-600 lg:px-5 lg:py-2.5"
+                  class="focus rounded-lg px-4 py-2 text-sm font-medium text-gray-800 transition-colors duration-150 hover:text-orange-400 lg:px-5 lg:py-2.5"
                   >Blog</a
                >
                <a
                   href="/projects"
-                  class="focus rounded-lg px-4 py-2 text-sm font-medium text-gray-800 transition-colors duration-150 hover:text-orange-600 lg:px-5 lg:py-2.5"
+                  class="focus rounded-lg px-4 py-2 text-sm font-medium text-gray-800 transition-colors duration-150 hover:text-orange-400 lg:px-5 lg:py-2.5"
                   >Projects</a
                >
             </div>
