@@ -19,20 +19,21 @@ import TheLogo from './TheLogo.vue';
                </span>
             </a>
 
-            <div class="flex items-center lg:order-2">
+            <!-- Navigation links for larger screens -->
+            <div class="hidden items-center gap-2 sm:flex lg:order-2">
                <a
-                  href="#about"
-                  class="mr-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-300 lg:px-5 lg:py-2.5"
+                  href="/#about"
+                  class="focus rounded-lg px-4 py-2 text-sm font-medium text-gray-800 transition-colors duration-150 hover:text-orange-600 lg:px-5 lg:py-2.5"
                   >About</a
                >
                <a
-                  href="#posts"
-                  class="mr-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-300 lg:px-5 lg:py-2.5"
-                  >Posts</a
+                  href="/blog"
+                  class="focus rounded-lg px-4 py-2 text-sm font-medium text-gray-800 transition-colors duration-150 hover:text-orange-600 lg:px-5 lg:py-2.5"
+                  >Blog</a
                >
                <a
-                  href="#projects"
-                  class="mr-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-gray-300 lg:px-5 lg:py-2.5"
+                  href="/projects"
+                  class="focus rounded-lg px-4 py-2 text-sm font-medium text-gray-800 transition-colors duration-150 hover:text-orange-600 lg:px-5 lg:py-2.5"
                   >Projects</a
                >
             </div>
