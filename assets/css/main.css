@@ -2,11 +2,17 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
+@theme {
+   --breakpoint-2xs: 20rem;
+   --breakpoint-xs: 30rem;
+   --font-inter: 'Inter', sans-serif;
+   --font-red-hat-display: 'Red Hat Display', sans-serif;
+}
+
 .debug {
    @apply border border-dashed border-red-500;
 }
 
-@theme {
-   --font-inter: 'Inter', sans-serif;
-   --font-red-hat-display: 'Red Hat Display', sans-serif;
+.focus {
+   @apply rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-200;
 }
