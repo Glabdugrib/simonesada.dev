@@ -1,7 +1,7 @@
 ignoredBuiltDependencies:
-  - '@parcel/watcher'
-  - '@tailwindcss/oxide'
-  - esbuild
+   - '@parcel/watcher'
+   - '@tailwindcss/oxide'
+   - esbuild
 
 onlyBuiltDependencies:
-  - sqlite3
+   - sqlite3
