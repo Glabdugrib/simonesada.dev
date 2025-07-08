@@ -13,10 +13,11 @@ export default defineNuxtConfig({
    content: {
       build: {
          markdown: {
-            highlight: {
-               theme: 'synthwave-84',
-               langs: ['go'],
-            },
+            highlight: false,
+            // highlight: {
+            //    theme: 'synthwave-84',
+            //    langs: ['go'],
+            // },
             toc: {
                depth: 3,
                searchDepth: 3,
