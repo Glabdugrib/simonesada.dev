@@ -1,0 +1,8 @@
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm use 22.16
+        - corepack enable
+        - pnpm install
+        - pnpm exec nuxt prepare
