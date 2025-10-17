@@ -8,7 +8,7 @@ const blogCollection = await useAsyncData(`blog-${slug}`, () =>
    queryCollection('blog').path(`/blog/${slug}`).where('draft', '=', false).first(),
 );
 
-const post: BlogCollectionItem | null = blogCollection.data.value;
+const post: BlogCollectionItem | null = blogCollection.data.value ?? null;
 
 if (!post) {
    throw createError({
