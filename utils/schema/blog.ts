@@ -9,9 +9,9 @@ export const blogSchema = z.object({
       updatedAt: z.string(),
       author: z.string(),
       authorBio: z.string(),
-      authorAvatar: z.string().url(),
+      authorAvatar: z.url(),
       tags: z.array(z.string()),
-      cover: z.string().url(),
+      cover: z.url(),
       readingTime: z.number().optional(),
    }),
 });
