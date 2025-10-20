@@ -4,27 +4,11 @@ import { useRoute } from 'vue-router';
 import HeaderBrand from './HeaderBrand.vue';
 import NavMenu from './NavMenu.vue';
 import HamburgerButton from './HamburgerButton.vue';
+import { menuItems } from '../config/appConfig';
+import { useMenu } from '../composables/useMenuActive';
 
 const route = useRoute();
-
-type MenuItem = {
-   name: string;
-   href: string;
-};
-
-const menuItems: MenuItem[] = [
-   { name: 'About', href: '/#about' },
-   { name: 'Blog', href: '/blog' },
-   { name: 'Projects', href: '/projects' },
-];
-
-function isActive(item: MenuItem) {
-   if (item.href.startsWith('/#')) {
-      const [, hash] = item.href.split('#');
-      return route.path === '/' && route.hash === `#${hash}`;
-   }
-   return route.path === item.href;
-}
+const { isActive } = useMenu(route);
 
 const mobileMenuOpen = ref(false);
 </script>
