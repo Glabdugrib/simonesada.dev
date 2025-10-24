@@ -5,9 +5,22 @@ import NavMenu from './NavMenu.vue';
 import HamburgerButton from './HamburgerButton.vue';
 import { menuItems } from '../config/appConfig';
 import { useHeader } from '../composables/useHeader';
+import { breakpointsTailwind, useBreakpoints } from '@vueuse/core';
+import { watch } from 'vue';
 
 const route = useRoute();
-const { isMenuItemActive, isMobileMenuOpen, toggleMobileMenu } = useHeader(route);
+const { isMenuItemActive, isMobileMenuOpen, hideMobileMenu, toggleMobileMenu } = useHeader(route);
+const breakpoints = useBreakpoints(breakpointsTailwind);
+
+// Hide the mobile menu when increasing the viewport width more than MD
+watch(
+   () => breakpoints.greater('md').value,
+   (isGreaterThanMd) => {
+      if (isGreaterThanMd && isMobileMenuOpen.value) {
+         hideMobileMenu();
+      }
+   },
+);
 </script>
 
 <template>

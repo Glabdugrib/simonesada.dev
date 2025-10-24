@@ -14,9 +14,15 @@ export function useHeader(route: RouteLocationNormalizedLoaded) {
 
    /** Mobile menu state and toggler */
    const isMobileMenuOpen = ref(false);
+   const showMobileMenu = () => {
+      isMobileMenuOpen.value = true;
+   };
+   const hideMobileMenu = () => {
+      isMobileMenuOpen.value = false;
+   };
    const toggleMobileMenu = () => {
       isMobileMenuOpen.value = !isMobileMenuOpen.value;
    };
 
-   return { isMenuItemActive, isMobileMenuOpen, toggleMobileMenu };
+   return { isMenuItemActive, isMobileMenuOpen, showMobileMenu, hideMobileMenu, toggleMobileMenu };
 }
