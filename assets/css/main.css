@@ -1,50 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import './typography.css';
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
 @theme {
+   /* Breakpoints */
    --breakpoint-2xs: 20rem;
    --breakpoint-xs: 30rem;
+
+   /* Font */
    --font-inter: 'Inter', sans-serif;
    --font-poppins: 'Poppins', sans-serif;
    --font-poppins-rounded: 'PoppinsRounded', sans-serif;
+
+   /* Palette */
+   --color-bg-main: #fefffe;
+   --color-bg-inverse: #111827;
+   --color-text-main: #111827;
+   --color-text-inverse: #fefffe;
+
+   /* Accent */
+   --color-accent-primary: var(--color-orange-600);
+   --color-accent-secondary: var(--color-emerald-400);
+
+   /* Animation */
    --animate-spin: spin 1.5s ease-in-out;
 }
 
-@font-face {
-   font-family: 'PoppinsRounded';
-   src: url('/fonts/PoppinsRounded/PoppinsRounded-Regular.ttf') format('truetype');
-   font-weight: 400;
-   font-style: normal;
-   font-display: swap;
+.bg-main {
+   background-color: var(--color-bg-main);
+}
+.bg-inverse {
+   background-color: var(--color-bg-inverse);
 }
 
-.bg-warm-white {
-   background-color: #fefffe;
+.text-main {
+   color: var(--color-text-main);
 }
-.text-warm-white {
-   color: #fefffe;
-}
-
-.bg-warm-black {
-   background-color: #111827;
-}
-.text-warm-black {
-   color: #111827;
-}
-.border-warm-black {
-   border-color: #111827;
+.text-inverse {
+   color: var(--color-text-inverse);
 }
 
-.shadow-warm-black {
-   box-shadow: 1px 1px 0px 1px #111827;
+.text-accent-primary {
+   color: var(--color-accent-primary);
+}
+.text-accent-secondary {
+   color: var(--color-accent-secondary);
 }
 
-.debug {
-   @apply border border-dashed border-red-500;
+.bg-accent-primary {
+   background-color: var(--color-accent-primary);
+}
+.bg-accent-secondary {
+   background-color: var(--color-accent-secondary);
+}
+
+.border-inverse {
+   border-color: var(--color-bg-inverse);
+}
+.shadow-inverse {
+   box-shadow: 1px 1px 0 1px var(--color-bg-inverse);
 }
 
 .focus {
    @apply rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-200;
+}
+
+.debug {
+   @apply border border-dashed border-red-500;
 }

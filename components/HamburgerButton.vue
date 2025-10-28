@@ -5,7 +5,7 @@ const props = defineProps<{ isMobileMenuOpen: boolean }>();
 <template>
    <button
       type="button"
-      class="text-warm-black flex cursor-pointer items-center justify-center p-3"
+      class="text-main flex cursor-pointer items-center justify-center p-3"
       aria-controls="navbar-default"
       aria-expanded="false"
    >

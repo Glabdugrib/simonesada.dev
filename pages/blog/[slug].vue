@@ -44,7 +44,7 @@ console.log('POST:', post);
                <span
                   v-for="tag in ['tailwind', 'ui', 'flowbite', 'prototyping']"
                   :key="tag"
-                  class="rounded-full bg-orange-100 px-2.5 py-1 text-xs font-medium text-orange-600"
+                  class="text-accent-primary rounded-full bg-orange-100 px-2.5 py-1 text-xs font-medium"
                >
                   {{ tag.toUpperCase() }}
                </span>
