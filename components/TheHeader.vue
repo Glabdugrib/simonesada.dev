@@ -3,7 +3,7 @@ import { useRoute } from 'vue-router';
 import HeaderBrand from './HeaderBrand.vue';
 import NavMenu from './NavMenu.vue';
 import HamburgerButton from './HamburgerButton.vue';
-import { menuItems } from '../config/appConfig';
+import { menuItems, socialLinks } from '../config/appConfig';
 import { useHeader } from '../composables/useHeader';
 import { breakpointsTailwind, useBreakpoints } from '@vueuse/core';
 import { watch } from 'vue';
@@ -37,6 +37,11 @@ watch(
          <NavMenu :menu-items="menuItems" :is-active="isMenuItemActive" class="hidden md:flex" />
       </div>
       <div class="border-warm-black absolute left-0 right-0 top-full z-20 border-b-[1.5px]"></div>
-      <MobileMenu :is-mobile-menu-open="isMobileMenuOpen" />
+      <MobileMenu
+         :menu-items="menuItems"
+         :social-links="socialLinks"
+         :is-mobile-menu-open="isMobileMenuOpen"
+         :is-active="isMenuItemActive"
+      />
    </header>
 </template>

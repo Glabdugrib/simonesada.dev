@@ -1,5 +1,5 @@
 import type { RouteLocationNormalizedLoaded } from 'vue-router';
-import type { MenuItem } from '../types/menu.type';
+import type { MenuItem } from '../types/menu-item.type';
 import { ref } from 'vue';
 
 export function useHeader(route: RouteLocationNormalizedLoaded) {

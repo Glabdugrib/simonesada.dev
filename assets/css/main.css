@@ -37,6 +37,10 @@
    border-color: #111827;
 }
 
+.shadow-warm-black {
+   box-shadow: 1px 1px 0px 1px #111827;
+}
+
 .debug {
    @apply border border-dashed border-red-500;
 }
