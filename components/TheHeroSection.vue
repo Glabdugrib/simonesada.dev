@@ -1,29 +1,48 @@
 <template>
-   <section class="bg-white">
+   <section class="bg-alt">
       <div
-         class="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0"
+         class="py-15 lg:gap-8:py-20 mx-auto grid max-w-screen-xl gap-10 px-4 lg:grid-cols-12 xl:gap-0"
       >
-         <div class="mr-auto place-self-center lg:col-span-8">
+         <div class="place-self-center lg:col-span-7 lg:mr-auto">
             <h2
-               class="mb-8 max-w-2xl text-center text-lg font-bold leading-none tracking-tight text-orange-400 md:text-xl xl:text-2xl"
+               class="text-accent-secondary font-poppins-rounded mb-6 text-center text-2xl font-medium"
             >
                Welcome to my lab
             </h2>
             <h1
-               class="mb-12 max-w-2xl text-center text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl"
+               class="font-poppins text-main mb-8 text-center text-5xl font-extrabold leading-none md:text-6xl lg:text-7xl"
             >
                Hi, I'm Simone!
             </h1>
             <p
-               class="mb-12 max-w-2xl text-center font-light text-gray-500 md:text-xl lg:mb-8 lg:text-2xl"
+               class="text-main font-poppins mb-6 max-w-screen-md text-center text-lg leading-10 md:text-xl lg:mb-8 lg:text-2xl"
             >
-               I'm a <strong>Full-Stack Software Engineer</strong> who's always tinkering with new
-               ideas and pushing the boundaries of what's possible in development. This portfolio is
-               where I document my creative process, discoveries, and occasional misadventures.
+               I'm a
+               <span class="font-poppins-rounded text-accent-primary font-medium"
+                  >Full-Stack Software Engineer</span
+               >
+               who's always tinkering with new ideas and pushing the boundaries of what's possible
+               in development.
+               <br />
+               This portfolio is where I document my creative process, discoveries, and occasional
+               misadventures.
             </p>
+            <div class="group flex justify-center">
+               <a
+                  href="#"
+                  class="border-inverse shadow-inverse bg-accent-secondary group-hover:!bg-accent-secondary-dark font-poppins-rounded inline-flex items-center justify-center gap-2 rounded border-[1.5px] p-4 px-8 text-white transition-colors"
+               >
+                  Get in touch
+                  <i class="pi pi-bolt"></i>
+               </a>
+            </div>
          </div>
-         <div class="hidden lg:col-span-4 lg:mt-0 lg:flex">
-            <img src="/public/hero-image.png" alt="mockup" />
+         <div class="flex items-center justify-center lg:col-span-5">
+            <img
+               src="/images/avatar-transparent-cut.png"
+               alt="avatar"
+               class="border-inverse border-b-[1.5px]"
+            />
          </div>
       </div>
    </section>

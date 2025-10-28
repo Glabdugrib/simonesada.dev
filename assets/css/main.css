@@ -14,13 +14,15 @@
 
    /* Palette */
    --color-bg-main: #fefffe;
+   --color-bg-alt: #fff6e5;
    --color-bg-inverse: #111827;
    --color-text-main: #111827;
    --color-text-inverse: #fefffe;
 
    /* Accent */
    --color-accent-primary: var(--color-orange-600);
-   --color-accent-secondary: var(--color-emerald-400);
+   --color-accent-secondary: #00cc8b;
+   --color-accent-secondary-dark: var(--color-emerald-500);
 
    /* Animation */
    --animate-spin: spin 1.5s ease-in-out;
@@ -29,8 +31,8 @@
 .bg-main {
    background-color: var(--color-bg-main);
 }
-.bg-inverse {
-   background-color: var(--color-bg-inverse);
+.bg-alt {
+   background-color: var(--color-bg-alt);
 }
 
 .text-main {
@@ -46,6 +48,9 @@
 .text-accent-secondary {
    color: var(--color-accent-secondary);
 }
+.text-accent-secondary-dark {
+   color: var(--color-accent-secondary-dark);
+}
 
 .bg-accent-primary {
    background-color: var(--color-accent-primary);
@@ -53,12 +58,15 @@
 .bg-accent-secondary {
    background-color: var(--color-accent-secondary);
 }
+.bg-accent-secondary-dark {
+   background-color: var(--color-accent-secondary-dark);
+}
 
 .border-inverse {
    border-color: var(--color-bg-inverse);
 }
 .shadow-inverse {
-   box-shadow: 1px 1px 0 1px var(--color-bg-inverse);
+   box-shadow: 3px 3px 0 0px var(--color-bg-inverse);
 }
 
 .focus {
