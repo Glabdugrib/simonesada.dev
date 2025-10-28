@@ -24,10 +24,8 @@ watch(
 </script>
 
 <template>
-   <header class="bg-main fixed left-0 right-0 top-0 z-30">
-      <div
-         class="lg:h-18 mx-auto flex h-16 max-w-screen-xl items-center justify-between px-5 sm:px-8 md:h-14 md:px-10 lg:px-16"
-      >
+   <header class="bg-main fixed left-0 right-0 top-0 z-30 px-5 sm:px-8 md:px-10 lg:px-16">
+      <div class="lg:h-18 mx-auto flex h-16 max-w-screen-xl items-center justify-between md:h-14">
          <HeaderBrand />
          <HamburgerButton
             @click="toggleMobileMenu"
