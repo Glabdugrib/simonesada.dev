@@ -9,7 +9,7 @@ export default defineNuxtConfig({
    vite: {
       plugins: [tailwindcss()],
    },
-   modules: ['@nuxt/content', '@vueuse/nuxt'],
+   modules: ['@nuxt/content'],
    content: {
       build: {
          markdown: {
