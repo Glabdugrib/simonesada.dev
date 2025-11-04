@@ -37,7 +37,7 @@
                </a>
             </div>
          </div>
-         <div class="flex items-center justify-center lg:col-span-5">
+         <div class="lg:flex items-center justify-center lg:col-span-5 hidden">
             <img
                src="/images/avatar-transparent-cut.png"
                alt="avatar"
