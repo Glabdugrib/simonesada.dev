@@ -39,7 +39,7 @@ const setupMarquee = () => {
    };
 
    animate();
-   container.classList.add('!opacity-40');
+   container.classList.add('!opacity-90');
 };
 
 onMounted(() => {
@@ -51,9 +51,11 @@ onMounted(() => {
    <section>
       <div
          ref="marqueeRef"
-         class="text-md relative flex overflow-hidden whitespace-nowrap border-2 border-orange-400 py-1 font-semibold text-orange-400 opacity-0 transition-opacity duration-700"
+         class="border-inverse relative flex overflow-hidden border-[1.5px] py-2 opacity-0 transition-opacity duration-1000"
       >
-         <div class="marquee-content flex gap-5 pe-5">
+         <div
+            class="marquee-content text-main font-poppins-rounded flex gap-5 whitespace-nowrap pe-5 text-lg font-semibold"
+         >
             <template v-for="(str, index) in strings" :key="index">
                <span>{{ str }}</span>
                <span v-if="divider && index < strings.length">{{ divider }}</span>
