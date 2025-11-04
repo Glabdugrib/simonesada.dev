@@ -21,8 +21,9 @@
                <span class="font-poppins-rounded text-accent-primary font-medium"
                   >Full-Stack Software Engineer</span
                >
-               who's always tinkering with new ideas and pushing the boundaries of what's possible
-               in development.
+               who's always tinkering with new ideas
+               <!-- and pushing the boundaries of what's possible in development -->
+               .
                <br />
                This portfolio is where I document my creative process, discoveries, and occasional
                misadventures.
