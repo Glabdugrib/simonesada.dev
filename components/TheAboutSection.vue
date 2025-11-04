@@ -29,7 +29,7 @@
          </p>
       </div>
       <div class="mt-8 flex items-center justify-center">
-         <div class="debug grid grid-cols-2 gap-4">
+         <div class="grid grid-cols-2 gap-4">
             <img
                class="w-full rounded-lg"
                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
