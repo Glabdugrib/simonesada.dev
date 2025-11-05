@@ -23,6 +23,7 @@
    --color-accent-primary: var(--color-orange-600);
    --color-accent-secondary: #00cc8b;
    --color-accent-secondary-dark: var(--color-emerald-500);
+   --color-accent-tertiary: #846fe3;
 
    /* Animation */
    --animate-spin: spin 1.5s ease-in-out;
@@ -51,6 +52,9 @@
 .text-accent-secondary-dark {
    color: var(--color-accent-secondary-dark);
 }
+.text-accent-tertiary {
+   color: var(--color-accent-tertiary);
+}
 
 .bg-accent-primary {
    background-color: var(--color-accent-primary);
@@ -60,6 +64,9 @@
 }
 .bg-accent-secondary-dark {
    background-color: var(--color-accent-secondary-dark);
+}
+.bg-accent-tertiary {
+   background-color: var(--color-accent-tertiary);
 }
 
 .border-inverse {

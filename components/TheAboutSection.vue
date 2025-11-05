@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { features } from '../config/appConfig';
+</script>
+
 <template>
    <div class="gap-16 lg:grid lg:grid-cols-2">
       <div class="text-main font-poppins font-light sm:text-lg">
@@ -41,6 +45,19 @@
                alt="office content 2"
             />
          </div>
+      </div>
+   </div>
+   <div class="text-main font-poppins mt-12 grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+      <div
+         v-for="(feature, idx) in features"
+         :key="feature.id"
+         class="flex flex-col items-center justify-center last:md:col-span-2 last:md:mx-auto last:md:w-[calc(50%-24px)] last:lg:col-span-1 last:lg:mx-0 last:lg:w-auto mb-auto"
+      >
+         <i :class="['pi mb-4 text-5xl', feature.icon.name, feature.icon.color]" />
+         <h3 class="font-poppins-rounded mb-3 text-center text-xl font-bold">
+            {{ feature.title }}
+         </h3>
+         <p class="text-center font-light text-lg">{{ feature.description }}</p>
       </div>
    </div>
 </template>

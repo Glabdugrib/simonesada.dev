@@ -44,7 +44,7 @@ defineProps<{
             <div class="flex justify-center gap-6">
                <a
                   v-for="social in socialLinks"
-                  :key="social.label"
+                  :key="social.id"
                   :href="social.href"
                   class="border-inverse shadow-inverse hover:bg-accent-secondary flex items-center justify-center rounded border p-4 transition-colors hover:text-white"
                   :aria-label="social.label"
