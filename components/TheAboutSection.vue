@@ -1,18 +1,12 @@
 <script setup lang="ts">
 import { features } from '../config/appConfig';
+import SectionTitle from './SectionTitle.vue';
 </script>
 
 <template>
    <div class="gap-16 lg:grid lg:grid-cols-2">
       <div class="text-main font-poppins font-light sm:text-lg">
-         <h2
-            class="text-main !font-poppins-rounded relative mb-6 text-center text-4xl font-extrabold tracking-tight lg:mb-7"
-         >
-            About me
-            <span
-               class="bg-accent-secondary absolute -bottom-1.5 left-1/2 h-1.5 w-16 -translate-x-1/2 rounded"
-            ></span>
-         </h2>
+         <SectionTitle title="About me" />
          <p class="mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quam metus, finibus eu
             molestie in, egestas ut tortor. Sed augue erat, dapibus sed sem tristique, condimentum
@@ -33,7 +27,7 @@ import { features } from '../config/appConfig';
          </p>
       </div>
       <div class="mt-8 flex items-center justify-center">
-         <div class="grid grid-cols-2 gap-4">
+         <div class="debug grid grid-cols-2 gap-4">
             <img
                class="w-full rounded-lg"
                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
