@@ -46,8 +46,7 @@ export const features: Feature[] = [
          color: 'text-accent-secondary',
       },
       title: 'Dolor Sit Amet',
-      description:
-         'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
    },
    {
       id: 3,

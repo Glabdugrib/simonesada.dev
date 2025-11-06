@@ -51,7 +51,7 @@ onMounted(() => {
    <section>
       <div
          ref="marqueeRef"
-         class="border-inverse relative flex overflow-hidden border-[1.5px] py-2 opacity-0 transition-opacity duration-1000"
+         class="border-inverse relative flex overflow-hidden border-[1.5px] py-2 opacity-0 transition-opacity duration-150"
       >
          <div
             class="marquee-content text-main font-poppins-rounded flex gap-5 whitespace-nowrap pe-5 text-lg font-semibold"
