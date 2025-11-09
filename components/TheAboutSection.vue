@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { features } from '../config/appConfig';
 import SectionTitle from './SectionTitle.vue';
+
+const title = 'About me';
 </script>
 
 <template>
    <div class="gap-16 lg:grid lg:grid-cols-2">
       <div class="text-main font-poppins font-light sm:text-lg">
-         <SectionTitle title="About me" />
+         <SectionTitle :title />
          <p class="mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quam metus, finibus eu
             molestie in, egestas ut tortor. Sed augue erat, dapibus sed sem tristique, condimentum
@@ -27,14 +29,14 @@ import SectionTitle from './SectionTitle.vue';
          </p>
       </div>
       <div class="mt-8 flex items-center justify-center">
-         <div class="debug grid grid-cols-2 gap-4">
+         <div class="grid grid-cols-2 gap-4">
             <img
-               class="w-full rounded-lg"
+               class="shadow-inverse w-full rounded-lg"
                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
                alt="office content 1"
             />
             <img
-               class="mt-4 w-full rounded-lg lg:mt-10"
+               class="shadow-inverse mt-6 w-full rounded-lg lg:mt-12"
                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
                alt="office content 2"
             />
@@ -51,7 +53,7 @@ import SectionTitle from './SectionTitle.vue';
          <h3 class="font-poppins-rounded mb-3 text-center text-xl font-bold">
             {{ feature.title }}
          </h3>
-         <p class="text-center text-lg font-light">{{ feature.description }}</p>
+         <p class="text-center font-light sm:text-lg">{{ feature.description }}</p>
       </div>
    </div>
 </template>

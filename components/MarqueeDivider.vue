@@ -48,13 +48,13 @@ onMounted(() => {
 </script>
 
 <template>
-   <section>
+   <section class="border-inverse border-y-2 bg-green-300">
       <div
          ref="marqueeRef"
-         class="border-inverse relative flex overflow-hidden border-[1.5px] py-2 opacity-0 transition-opacity duration-150"
+         class="relative flex overflow-hidden py-1 opacity-0 transition-opacity duration-150"
       >
          <div
-            class="marquee-content text-main font-poppins-rounded flex gap-5 whitespace-nowrap pe-5 text-lg font-semibold"
+            class="marquee-content text-main font-poppins-rounded flex gap-5 whitespace-nowrap pe-5 text-sm font-medium"
          >
             <template v-for="(str, index) in strings" :key="index">
                <span>{{ str }}</span>

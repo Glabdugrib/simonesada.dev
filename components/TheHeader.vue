@@ -34,7 +34,7 @@ watch(
          />
          <NavMenu :menu-items="menuItems" :is-active="isMenuItemActive" class="hidden md:flex" />
       </div>
-      <div class="border-inverse absolute left-0 right-0 top-full z-20 border-b-[1.5px]"></div>
+      <div class="border-inverse absolute left-0 right-0 top-full z-20 border-b-2"></div>
       <MobileMenu
          :menu-items="menuItems"
          :social-links="socialLinks"

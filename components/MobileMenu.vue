@@ -12,7 +12,7 @@ defineProps<{
 
 <template>
    <div
-      class="bg-main not-first-of-type:border-inverse fixed left-0 right-0 top-[4rem] z-10 overflow-hidden border-b-[1.5px] transition-[height] duration-300 ease-in-out md:top-[3.5rem] lg:top-[4.5rem]"
+      class="bg-main not-first-of-type:border-inverse fixed left-0 right-0 top-[4rem] z-10 overflow-hidden border-b-2 transition-[height] duration-300 ease-in-out md:top-[3.5rem] lg:top-[4.5rem]"
       :class="{
          'h-[calc(100vh-4rem)] md:h-[calc(100vh-3.5rem)] lg:h-[calc(100vh-4.5rem)]':
             isMobileMenuOpen,
@@ -46,7 +46,7 @@ defineProps<{
                   v-for="social in socialLinks"
                   :key="social.id"
                   :href="social.href"
-                  class="border-inverse shadow-inverse hover:bg-accent-secondary flex items-center justify-center rounded border p-4 transition-colors hover:text-white"
+                  class="border-inverse shadow-inverse hover:bg-accent-secondary flex items-center justify-center rounded-lg border p-4 transition-colors hover:text-white"
                   :aria-label="social.label"
                   target="_blank"
                   rel="noopener noreferrer"
