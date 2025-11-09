@@ -9,7 +9,7 @@
          Hi, I'm Simone!
       </h1>
       <p
-         class="text-main font-poppins mb-6 max-w-screen-md text-center text-lg leading-10 md:text-xl lg:mb-8 lg:text-2xl"
+         class="text-main font-poppins max-w-screen-md text-center text-lg leading-10 md:text-xl lg:text-2xl"
       >
          I'm a
          <span class="font-poppins-rounded text-accent-primary font-medium"
@@ -22,7 +22,7 @@
          This portfolio is where I document my creative process, discoveries, and occasional
          misadventures.
       </p>
-      <div class="flex justify-center">
+      <div class="mt-8 flex justify-center lg:mt-10">
          <div class="shadow-inverse group cursor-pointer rounded-lg">
             <a
                href="#"

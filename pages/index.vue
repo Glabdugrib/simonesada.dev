@@ -12,5 +12,7 @@ import MarqueeDivider from '~/components/MarqueeDivider.vue';
    <SectionWrapper id="about" class="bg-main border-inverse border-b-2">
       <TheAboutSection />
    </SectionWrapper>
-   <div class="py-150 bg-main"></div>
+   <SectionWrapper id="blog" class="bg-alt border-inverse border-b-2">
+      <TheBlogSection />
+   </SectionWrapper>
 </template>
