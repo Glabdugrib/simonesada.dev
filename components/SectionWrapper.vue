@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
    <section :id>
-      <div class="mx-auto max-w-screen-xl items-center px-4 py-16 lg:px-6 lg:py-24">
+      <div class="pb-15 lg:pt-15 lg:pb-25 mx-auto max-w-screen-xl items-center px-4 pt-10 lg:px-6">
          <div class="debu g">
             <slot />
          </div>
