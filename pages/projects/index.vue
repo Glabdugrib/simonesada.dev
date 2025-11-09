@@ -5,7 +5,7 @@ import SectionWrapper from '~/components/SectionWrapper.vue';
 <template>
    <SectionWrapper id="wip" class="lg:mt-18 mt-16 md:mt-14">
       <h1 class="font-poppins-rounded text-xl font-bold text-orange-400">
-         Blog page is a work in progress...
+         Projects page is a work in progress...
       </h1>
    </SectionWrapper>
 </template>
