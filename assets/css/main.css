@@ -14,7 +14,7 @@
 
    /* Palette */
    --color-bg-main: #fefffe;
-   --color-bg-alt: #fff6e5;
+   --color-bg-alt: var(--color-yellow-200);
    --color-bg-inverse: #111827;
    --color-text-main: #111827;
    --color-text-inverse: #fefffe;
@@ -34,6 +34,9 @@
 }
 .bg-alt {
    background-color: var(--color-bg-alt);
+}
+.bg-inverse {
+   background-color: var(--color-bg-inverse);
 }
 
 .text-main {
