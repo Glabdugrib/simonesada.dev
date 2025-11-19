@@ -16,10 +16,10 @@
          <div class="shadow-inverse group cursor-pointer rounded-lg">
             <a
                href="#"
-               class="border-inverse shadow-inverse bg-accent-secondary group-hover:!bg-accent-secondary-dark font-poppins-rounded group-hover:-translate-0.5 inline-flex items-center justify-center gap-2 rounded-lg border-2 p-4 px-8 text-white transition-all duration-150"
+               class="border-inverse shadow-inverse bg-accent-secondary font-poppins-rounded group-hover:-translate-0.5 inline-flex items-center justify-center gap-1 rounded-lg border-2 p-4 px-8 text-white transition-all duration-150"
             >
                Get in touch
-               <i class="pi pi-bolt"></i>
+               <i class="pi pi-bolt text-lg" />
             </a>
          </div>
       </div>

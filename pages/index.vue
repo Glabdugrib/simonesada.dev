@@ -7,7 +7,7 @@ import TheProjectsSection from '~/components/TheProjectsSection.vue';
 </script>
 
 <template>
-   <SectionWrapper id="hero" class="bg-alt lg:mt-18 mt-16 md:mt-14">
+   <SectionWrapper id="hero" class="lg:mt-18 bg-accent-secondary-light mt-16 md:mt-14">
       <TheHeroSection />
    </SectionWrapper>
    <MarqueeDivider :strings="['CODE', 'PLAY', 'EXPERIMENT', 'REPEAT']" divider="✱" :speed="0.2" />

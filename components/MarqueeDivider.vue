@@ -48,7 +48,7 @@ onMounted(() => {
 </script>
 
 <template>
-   <section class="border-inverse border-y-2 bg-green-300">
+   <section class="border-inverse border-y-2 bg-yellow-200">
       <div
          ref="marqueeRef"
          class="relative flex overflow-hidden py-1 opacity-0 transition-opacity duration-150"

@@ -1,6 +1,6 @@
 <template>
    <div class="place-self-center">
-      <h2 class="text-accent-secondary font-poppins-rounded mb-6 text-center text-2xl font-medium">
+      <h2 class="text-inverse font-poppins-rounded mb-6 text-center text-2xl font-medium">
          Welcome to my lab
       </h2>
       <h1
@@ -12,7 +12,7 @@
          class="text-main font-poppins max-w-screen-md text-center text-lg leading-10 md:text-xl lg:text-2xl"
       >
          I'm a
-         <span class="font-poppins-rounded text-accent-primary font-medium"
+         <span class="font-poppins-rounded text-inverse font-medium"
             >Full-Stack Software Engineer</span
          >
          who's always tinkering with new ideas
@@ -26,10 +26,10 @@
          <div class="shadow-inverse group cursor-pointer rounded-lg">
             <a
                href="#"
-               class="border-inverse shadow-inverse bg-accent-secondary group-hover:!bg-accent-secondary-dark font-poppins-rounded group-hover:-translate-0.5 inline-flex items-center justify-center gap-2 rounded-lg border-2 p-4 px-8 text-white transition-all duration-150"
+               class="border-inverse shadow-inverse bg-accent-secondary font-poppins-rounded group-hover:-translate-0.5 text-inverse inline-flex items-center justify-center gap-1 rounded-lg border-2 p-4 px-8 transition-all duration-150"
             >
                Get in touch
-               <i class="pi pi-bolt"></i>
+               <i class="pi pi-bolt text-lg" />
             </a>
          </div>
       </div>

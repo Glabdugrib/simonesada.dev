@@ -68,11 +68,11 @@ const posts: Post[] = [
       <PostMainCard :post="posts[0]!" />
       <PostCard v-for="post in posts.slice(1)" :key="post.id" :post="post" />
    </div>
-   <div class="mt-6 flex justify-center lg:mt-8">
+   <div class="mt-8 flex justify-center lg:mt-10">
       <div class="shadow-inverse group cursor-pointer rounded-lg">
          <a
             href="/blog"
-            class="border-inverse shadow-inverse bg-accent-secondary group-hover:!bg-accent-secondary-dark font-poppins-rounded group-hover:-translate-0.5 inline-flex items-center justify-center gap-2 rounded-lg border-2 p-4 px-8 text-white transition-all duration-150"
+            class="border-inverse shadow-inverse bg-accent-secondary font-poppins-rounded group-hover:-translate-0.5 inline-flex items-center justify-center gap-2 rounded-lg border-2 p-4 px-8 text-white transition-all duration-150"
          >
             View all posts
          </a>

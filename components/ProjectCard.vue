@@ -36,13 +36,13 @@ const links = [
                class="scale-on-hover h-full w-full object-cover"
             />
             <div
-               class="absolute inset-0 bg-gradient-to-t from-stone-900/95 via-stone-900/85 to-stone-900/20"
+               class="absolute inset-0 bg-gradient-to-t from-stone-900/95 via-stone-900/85 to-stone-900/40"
             />
          </div>
          <div class="relative flex h-full flex-col justify-end space-y-4 p-6 pb-3">
             <div class="space-y-3">
                <h3
-                  class="font-poppins-rounded text-inverse group-hover:text-accent-primary! line-clamp-2 text-pretty text-xl font-bold underline-offset-2 group-hover:underline"
+                  class="text-shadow-md font-poppins-rounded text-inverse group-hover:text-accent-primary! line-clamp-2 text-pretty text-xl font-bold underline-offset-2 group-hover:underline"
                >
                   {{ project.title }}
                </h3>

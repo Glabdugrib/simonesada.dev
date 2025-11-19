@@ -108,18 +108,18 @@ func main() {
 A serif is a small shape or projection that appears at the beginning or end of a stroke on a letter. Typefaces with serifs are called serif typefaces. Serif fonts are classified as one of the following:
 
 ```html
-<dl class="grid max-w-screen-md grid-cols-2 gap-8 text-gray-900 sm:grid-cols-3 dark:text-white">
+<dl class="grid max-w-screen-md grid-cols-2 gap-8 text-gray-900 sm:grid-cols-3">
    <div class="flex flex-col items-center justify-center">
       <dt class="mb-2 text-3xl font-extrabold">73M+</dt>
-      <dd class="text-lg font-normal text-gray-500 dark:text-gray-400">developers</dd>
+      <dd class="text-lg font-normal text-gray-500">developers</dd>
    </div>
    <div class="flex flex-col items-center justify-center">
       <dt class="mb-2 text-3xl font-extrabold">1B+</dt>
-      <dd class="text-lg font-normal text-gray-500 dark:text-gray-400">contributors</dd>
+      <dd class="text-lg font-normal text-gray-500">contributors</dd>
    </div>
    <div class="flex flex-col items-center justify-center">
       <dt class="mb-2 text-3xl font-extrabold">4M+</dt>
-      <dd class="text-lg font-normal text-gray-500 dark:text-gray-400">organizations</dd>
+      <dd class="text-lg font-normal text-gray-500">organizations</dd>
    </div>
 </dl>
 ```
