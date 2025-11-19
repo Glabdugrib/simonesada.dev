@@ -2,6 +2,7 @@
 import TheHeroSection from '~/components/TheHeroSection.vue';
 import TheAboutSection from '~/components/TheAboutSection.vue';
 import MarqueeDivider from '~/components/MarqueeDivider.vue';
+import TheBlogSection from '~/components/TheBlogSection.vue';
 </script>
 
 <template>

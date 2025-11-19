@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-   <div class="shadow-inverse bg-inverse col-span-1 row-span-1 rounded-lg">
+   <article class="shadow-inverse bg-inverse col-span-1 row-span-1 rounded-lg">
       <a
          href=""
          class="hover:-translate-0.5 bg-main group flex h-full w-full cursor-pointer overflow-hidden rounded-lg border-2 transition-transform duration-150"
@@ -30,7 +30,7 @@ defineProps<{
             <div class="mb-3 flex flex-wrap gap-2">
                <span
                   v-for="tag in ['React', 'TypeScript', 'WebDev']"
-                  class="font-poppins-rounded bg-accent-secondary/10 text-accent-secondary border-accent/20 hover:bg-accent-secondary/20 inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium"
+                  class="font-poppins-rounded bg-accent-secondary/10 text-accent-secondary border-accent/20 inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium"
                   >{{ tag }}</span
                >
             </div>
@@ -49,5 +49,5 @@ defineProps<{
             </div>
          </div>
       </a>
-   </div>
+   </article>
 </template>

@@ -79,6 +79,13 @@
    box-shadow: 3px 3px 0 0px var(--color-bg-inverse);
 }
 
+.scale-on-hover {
+   @apply transition-transform duration-500 ease-in-out group-hover:scale-110;
+}
+.translate-on-hover {
+   @apply hover:-translate-0.5 transition-transform duration-150;
+}
+
 .focus {
    @apply rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-200;
 }
