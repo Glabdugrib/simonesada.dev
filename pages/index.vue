@@ -3,6 +3,7 @@ import TheHeroSection from '~/components/TheHeroSection.vue';
 import TheAboutSection from '~/components/TheAboutSection.vue';
 import MarqueeDivider from '~/components/MarqueeDivider.vue';
 import TheBlogSection from '~/components/TheBlogSection.vue';
+import TheProjectsSection from '~/components/TheProjectsSection.vue';
 </script>
 
 <template>
@@ -15,5 +16,8 @@ import TheBlogSection from '~/components/TheBlogSection.vue';
    </SectionWrapper>
    <SectionWrapper id="blog" class="bg-alt border-inverse border-b-2">
       <TheBlogSection />
+   </SectionWrapper>
+   <SectionWrapper id="projects" class="bg-main border-inverse border-b-2">
+      <TheProjectsSection />
    </SectionWrapper>
 </template>
