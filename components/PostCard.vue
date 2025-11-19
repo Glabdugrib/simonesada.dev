@@ -21,7 +21,7 @@ defineProps<{
                :alt="post.image.alt"
             />
          </picture>
-         <div class="text-main flex w-full flex-col gap-3 px-3 pb-2 pt-3">
+         <div class="text-main flex w-full flex-col gap-3 px-3 pb-3 pt-5">
             <h3
                class="font-poppins-rounded group-hover:text-accent-primary line-clamp-2 text-pretty text-xl font-bold underline-offset-2 group-hover:underline"
             >

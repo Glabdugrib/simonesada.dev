@@ -28,7 +28,7 @@ const links = [
    <article
       class="shadow-inverse border-inverse bg-inverse overflow-hidden rounded-lg border-2 bg-stone-400"
    >
-      <a href="/gianni" class="min-h-75 group relative flex flex-col justify-end">
+      <a href="#" class="lg:min-h-75 group relative flex flex-col justify-end">
          <div class="absolute inset-0">
             <img
                :src="project.image.src"
