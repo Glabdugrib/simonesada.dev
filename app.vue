@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import TheContactMeSection from './components/TheContactMeSection.vue';
 import TheFooter from './components/TheFooter.vue';
 import TheHeader from './components/TheHeader.vue';
 
@@ -19,5 +20,8 @@ useHead({
 <template>
    <TheHeader />
    <NuxtPage />
+   <SectionWrapper id="contact-me" class="bg-alt border-inverse border-y-2">
+      <TheContactMeSection />
+   </SectionWrapper>
    <TheFooter />
 </template>

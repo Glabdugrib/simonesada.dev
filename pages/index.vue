@@ -17,7 +17,7 @@ import TheProjectsSection from '~/components/TheProjectsSection.vue';
    <SectionWrapper id="blog" class="bg-alt border-inverse border-b-2">
       <TheBlogSection />
    </SectionWrapper>
-   <SectionWrapper id="projects" class="bg-main border-inverse border-b-2">
+   <SectionWrapper id="projects" class="bg-main">
       <TheProjectsSection />
    </SectionWrapper>
 </template>
