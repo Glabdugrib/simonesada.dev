@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/Glabdugrib/simonesada.dev/compare/v1.0.0...v1.1.0) (2026-03-27)
+
+
+### Features
+
+* add dynamic app version in footer ([5b7eba2](https://github.com/Glabdugrib/simonesada.dev/commit/5b7eba2172e12b5d91b8d9a8be6c824829a674c6))
+
 ## 1.0.0 (2026-03-27)
 
 
