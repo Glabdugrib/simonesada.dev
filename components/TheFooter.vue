@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import Logo from './Logo.vue';
 import { socialLinks } from '../config/appConfig';
+
+// x-release-please-start-version
+const appVersion = '1.0.0'
+// x-release-please-end
 </script>
 
 <template>
@@ -16,7 +20,7 @@ import { socialLinks } from '../config/appConfig';
             </span>
          </a>
          <span class="text-main sm:order-0 order-2 text-sm text-gray-500 sm:text-center"
-            >© 2025 Simone Sada. All Rights Reserved.
+            >© 2025 Simone Sada — All Rights Reserved — v{{ appVersion }}
          </span>
          <div class="flex gap-3 text-xl sm:mt-0 lg:gap-4">
             <a
