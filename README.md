@@ -1,5 +1,15 @@
 # Nuxt Minimal Starter
 
+[//]: # (// x-release-please-start-version)
+![Latest Release](https://img.shields.io/badge/latest_release-amber?style=plastic&label=1.1.0)
+
+[//]: # '// x-release-please-end'
+
+![Release Workflow](https://github.com/Glabdugrib/simonesada.dev/actions/workflows/release-please.yml/badge.svg?branch=main)
+
+![Node Version](https://img.shields.io/badge/node-24.14.1-blue?style=plastic)
+![PNPM Version](https://img.shields.io/badge/pnpm-10.33.0-blue?style=plastic)
+
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
