@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/Glabdugrib/simonesada.dev/compare/v1.1.0...v1.2.0) (2026-03-28)
+
+
+### Features
+
+* **ci:** add manual AWS Amplify deploy workflow via OIDC ([ed1bc77](https://github.com/Glabdugrib/simonesada.dev/commit/ed1bc77540f3bffd4dab4350cfeef2fa02511acf))
+
 ## [1.1.0](https://github.com/Glabdugrib/simonesada.dev/compare/v1.0.0...v1.1.0) (2026-03-27)
 
 
