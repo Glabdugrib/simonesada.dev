@@ -2,7 +2,8 @@
 
 [//]: # '// x-release-please-start-version'
 
-![Latest Release](https://img.shields.io/badge/latest_release-amber?style=plastic&label=1.1.0)
+![Latest Release](https://img.shields.io/badge/latest_release-amber?style=plastic&label=1.2.0)
+
 [//]: # '// x-release-please-end'
 
 ![Release Workflow](https://github.com/Glabdugrib/simonesada.dev/actions/workflows/release-please.yml/badge.svg?branch=main)
@@ -51,4 +52,4 @@ pnpm preview
 
 ## Deployment
 
-Deployments to AWS Amplify are triggered manually via the **Deploy to AWS Amplify** GitHub Actions workflow. Authentication uses OIDC and no long-lived AWS credentials are stored.
+Deployments to AWS Amplify are triggered manually via the **deploy** GitHub Actions workflow. Authentication uses OIDC and no long-lived AWS credentials are stored.

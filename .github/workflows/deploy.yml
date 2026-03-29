@@ -1,7 +1,9 @@
-name: Deploy to AWS Amplify
+name: deploy
 
 on:
   workflow_dispatch:
+    branches:
+      - main
 
 permissions:
   id-token: write
