@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/Glabdugrib/simonesada.dev/compare/v1.2.0...v1.2.1) (2026-03-29)
+
+
+### Bug Fixes
+
+* minor fixes ([7f3bea2](https://github.com/Glabdugrib/simonesada.dev/commit/7f3bea21068d0002c3ad4537f909c17f41741f1c))
+
 ## [1.2.0](https://github.com/Glabdugrib/simonesada.dev/compare/v1.1.0...v1.2.0) (2026-03-28)
 
 
