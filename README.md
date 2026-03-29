@@ -1,8 +1,7 @@
 # simonesada.dev
 
-[//]: # '// x-release-please-start-version'
-
-![Latest Release](https://img.shields.io/badge/latest_release-amber?style=plastic&label=1.2.0)
+[//]: # (// x-release-please-start-version)
+![Latest Release](https://img.shields.io/badge/latest_release-amber?style=plastic&label=1.2.2)
 
 [//]: # '// x-release-please-end'
 

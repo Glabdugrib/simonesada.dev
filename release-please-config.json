@@ -1,6 +1,12 @@
 {
    "release-type": "node",
    "extra-files": ["README.md", "components/TheFooter.vue"],
+   "packages": {
+      ".": {
+         "release-type": "node",
+         "extra-files": ["README.md", "components/TheFooter.vue"]
+      }
+   },
    "changelog-sections": [
       {
          "type": "feat",
