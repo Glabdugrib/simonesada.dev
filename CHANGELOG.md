@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/Glabdugrib/simonesada.dev/compare/v1.2.1...v1.2.2) (2026-03-29)
+
+
+### Bug Fixes
+
+* trigger release ([053b6fe](https://github.com/Glabdugrib/simonesada.dev/commit/053b6feccf9ef35254c985ab6fdd03c602ee9657))
+
 ## [1.2.1](https://github.com/Glabdugrib/simonesada.dev/compare/v1.2.0...v1.2.1) (2026-03-29)
 
 
