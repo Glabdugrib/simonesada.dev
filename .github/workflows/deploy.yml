@@ -1,66 +1,66 @@
 name: deploy
 
 on:
-  workflow_dispatch:
-    branches:
-      - main
+   workflow_dispatch:
+      branches:
+         - main
 
 permissions:
-  id-token: write
-  contents: read
+   id-token: write
+   contents: read
 
 jobs:
-  deploy:
-    name: Build & Deploy
-    runs-on: ubuntu-latest
+   deploy:
+      name: Build & Deploy
+      runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      steps:
+         - name: Checkout repository
+           uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
+         - name: Set up Node.js
+           uses: actions/setup-node@v4
+           with:
+              node-version: 24
 
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
+         - name: Set up pnpm
+           uses: pnpm/action-setup@v4
+           with:
+              run_install: false
 
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
+         - name: Get pnpm store directory
+           id: pnpm-cache
+           run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
 
-      - name: Cache pnpm store
-        uses: actions/cache@v4
-        with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
+         - name: Cache pnpm store
+           uses: actions/cache@v4
+           with:
+              path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+              key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+              restore-keys: |
+                 ${{ runner.os }}-pnpm-
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+         - name: Install dependencies
+           run: pnpm install --frozen-lockfile
 
-      - name: Build Nuxt app
-        run: pnpm build
-        env:
-          NODE_ENV: production
+         - name: Build Nuxt app
+           run: pnpm build
+           env:
+              NODE_ENV: production
 
-      - name: Configure AWS credentials (OIDC)
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
-          aws-region: ${{ secrets.AWS_REGION }}
+         - name: Configure AWS credentials (OIDC)
+           uses: aws-actions/configure-aws-credentials@v4
+           with:
+              role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+              aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: Trigger Amplify deployment
-        run: |
-          JOB_ID=$(aws amplify start-job \
-            --app-id ${{ vars.AMPLIFY_APP_ID }} \
-            --branch-name ${{ vars.AMPLIFY_BRANCH }} \
-            --job-type RELEASE \
-            --query 'jobSummary.jobId' \
-            --output text)
+         - name: Trigger Amplify deployment
+           run: |
+              JOB_ID=$(aws amplify start-job \
+                --app-id ${{ vars.AMPLIFY_APP_ID }} \
+                --branch-name ${{ vars.AMPLIFY_BRANCH }} \
+                --job-type RELEASE \
+                --query 'jobSummary.jobId' \
+                --output text)
 
-          echo "Deployment started — Job ID: $JOB_ID"
+              echo "Deployment started — Job ID: $JOB_ID"
