@@ -1,9 +1,19 @@
-import type { Image } from './image.type.js';
+import type { Collections } from '@nuxt/content';
 
-export type Project = {
-   id: number;
-   title: string;
-   description: string;
-   tags: string[];
-   image: Image;
+export const PROJECT_LINK_CONFIG: Record<
+   'github' | 'demo',
+   { label: string; icon: string; ariaLabel: string }
+> = {
+   github: {
+      label: 'Code',
+      icon: 'pi pi-github',
+      ariaLabel: 'View source code on GitHub',
+   },
+   demo: {
+      label: 'Demo',
+      icon: 'pi pi-external-link',
+      ariaLabel: 'View live demo',
+   },
 };
+
+export type Project = Collections['projects'];

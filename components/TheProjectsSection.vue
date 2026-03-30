@@ -6,56 +6,43 @@ const title = 'Featured Projects';
 const description =
    'A selection of projects showcasing my skills and expertise in software engineering.';
 
-const projects: Project[] = [
-   {
-      id: 1,
-      title: 'Project One',
-      description: 'Description for project one.',
-      tags: ['Vue', 'TypeScript', 'CSS'],
-      image: {
-         src: 'https://plus.unsplash.com/premium_photo-1681399975135-252eab5fd2db?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-         alt: 'Project One Image',
-      },
-   },
-   {
-      id: 2,
-      title: 'Project Two',
-      description: 'Description for project two.',
-      tags: ['React', 'JavaScript', 'HTML'],
-      image: {
-         src: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-         alt: 'Project Two Image',
-      },
-   },
-   {
-      id: 3,
-      title: 'Project Three',
-      description: 'Description for project three.',
-      tags: ['Angular', 'TypeScript', 'Sass'],
-      image: {
-         src: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+const { data: projects } = await useAsyncData('projects', () => queryCollection('projects').all());
 
-         alt: 'Project Three Image',
+watch(
+   projects,
+   (newVal) => {
+      console.log('Project prop updated:', newVal);
+   },
+   { immediate: true },
+);
+
+const placeholder = {
+   title: 'Coming Soon',
+   description: 'More projects are in the pipeline',
+   draft: false,
+   meta: {
+      createdAt: '',
+      updatedAt: '',
+      tags: [],
+      cover: {
+         src: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+         alt: 'Placeholder Image',
       },
    },
-   {
-      id: 4,
-      title: 'Project Four',
-      description: 'Description for project four.',
-      tags: ['Svelte', 'JavaScript', 'Tailwind CSS'],
-      image: {
-         src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-         alt: 'Project Four Image',
-      },
-   },
-];
+} as unknown as Project;
+
+const displayedProjects = computed(() => {
+   if (!projects.value) return [];
+   console.warn('Raw projects data:', projects.value?.length);
+   return projects.value.length % 2 === 1 ? [...projects.value, placeholder] : projects.value;
+});
 </script>
 
 <template>
    <SectionTitle :title :description />
    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-7 lg:gap-8">
       <ProjectCard
-         v-for="(project, index) in projects"
+         v-for="(project, index) in displayedProjects"
          :key="index"
          :project
          class="lg:row-span-1"
@@ -70,7 +57,7 @@ const projects: Project[] = [
          ]"
       />
    </div>
-   <div class="mt-8 flex justify-center lg:mt-10">
+   <!-- <div class="mt-8 flex justify-center lg:mt-10">
       <div class="shadow-inverse group cursor-pointer rounded-lg">
          <a
             href="/blog"
@@ -79,5 +66,5 @@ const projects: Project[] = [
             View all projects
          </a>
       </div>
-   </div>
+   </div> -->
 </template>
