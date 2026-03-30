@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/Glabdugrib/simonesada.dev/compare/simonesada.dev-v1.4.0...simonesada.dev-v1.5.0) (2026-03-30)
+
+
+### Features
+
+* make projects section dynamic & add golem-booking project (WIP) ([de7f4be](https://github.com/Glabdugrib/simonesada.dev/commit/de7f4be459b8240786cc7922ea7b176fb6fd0235))
+
 ## [1.4.0](https://github.com/Glabdugrib/simonesada.dev/compare/simonesada.dev-v1.3.0...simonesada.dev-v1.4.0) (2026-03-30)
 
 
