@@ -13,7 +13,7 @@ const appVersion = '1.3.0';
          class="flex flex-col items-center justify-between gap-4 px-5 py-4 sm:flex-row sm:gap-0 sm:px-8 sm:py-2 md:px-10 lg:px-16"
       >
          <a href="/" class="sm:order-0 group hidden h-full items-center gap-2 sm:flex">
-            <Logo class="text-accent-primary h-7 group-hover:animate-spin" />
+            <!-- <Logo class="text-accent-primary h-7 group-hover:animate-spin" /> -->
             <span class="font-poppins-rounded hidden text-lg md:inline-block">
                <span class="text-main">simonesada</span>
                <span class="text-accent-secondary">.dev</span>
