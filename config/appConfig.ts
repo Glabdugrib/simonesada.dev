@@ -4,8 +4,8 @@ import type { SocialLink } from '../types/social-link.type';
 
 export const menuItems: MenuItem[] = [
    { name: 'About', href: '/#about' },
-   { name: 'Blog', href: '/blog' },
-   { name: 'Projects', href: '/projects' },
+   // { name: 'Blog', href: '/blog' },
+   { name: 'Projects', href: '/#projects' },
 ];
 
 export const socialLinks: SocialLink[] = [
@@ -23,7 +23,7 @@ export const socialLinks: SocialLink[] = [
    },
    {
       id: 3,
-      href: 'mailto:simone.sada93+website@gmail.com',
+      href: "mailto:simone.sada93+website@gmail.com?subject=Let's%20connect&body=Hi%20Simone,%0A%0A",
       icon: 'pi pi-at',
       label: 'Email',
    },
@@ -36,8 +36,8 @@ export const features: Feature[] = [
          name: 'pi-wave-pulse',
          color: 'text-accent-primary',
       },
-      title: 'Lorem Ipsum',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod.',
+      title: 'Built End-to-End',
+      description: 'From idea to production. Frontend, backend, and everything in between.',
    },
    {
       id: 2,
@@ -45,17 +45,16 @@ export const features: Feature[] = [
          name: 'pi-bullseye',
          color: 'text-accent-secondary',
       },
-      title: 'Dolor Sit Amet',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      title: 'Product Over Code',
+      description: 'Thinking about users and outcomes, not just the technical solution.',
    },
    {
       id: 3,
       icon: {
-         name: 'pi-trophy',
+         name: 'pi-lightbulb',
          color: 'text-accent-tertiary',
       },
-      title: 'Consectetur Adipiscing',
-      description:
-         'Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      title: 'Always Tinkering',
+      description: 'Exploring new tools, patterns, and ideas to keep the craft sharp.',
    },
 ];

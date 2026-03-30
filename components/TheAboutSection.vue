@@ -10,22 +10,19 @@ const title = 'About me';
       <div class="text-main font-poppins font-light sm:text-lg">
          <SectionTitle :title />
          <p class="mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quam metus, finibus eu
-            molestie in, egestas ut tortor. Sed augue erat, dapibus sed sem tristique, condimentum
-            pulvinar nulla. Integer in interdum ante, vitae tincidunt ante. Integer mollis sapien ac
-            lorem iaculis sodales. Donec eget lacus vitae arcu efficitur dignissim.
+            I'm a full-stack software engineer with 5+ years across consulting, SaaS, and web
+            agencies. I build products end-to-end, from frontend to backend and infrastructure, and
+            I care as much about the user experience as the architecture behind it.
          </p>
          <p class="mb-4">
-            Mauris tincidunt neque sem, congue convallis ipsum varius eu. Maecenas et posuere sem.
-            Quisque volutpat tincidunt nisi, id fringilla risus aliquam nec. Nunc maximus erat non
-            semper rutrum. Proin eleifend justo eu orci tempor auctor. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nulla ultrices eros sit amet eros sollicitudin, vitae
-            faucibus odio scelerisque.
+            I've built products from scratch where nobody had a clear spec and I had to piece
+            together the requirements myself, and I've worked inside large, structured codebases
+            where the real skill is setting conventions and patterns that keep everything stable as
+            it grows. I like both, and switching between the two is what I am good at.
          </p>
          <p>
-            Phasellus augue urna, molestie eget felis vel, hendrerit efficitur ipsum. Donec quis
-            blandit nisl, id tincidunt nulla. Pellentesque interdum leo efficitur suscipit
-            elementum. Proin et magna volutpat, venenatis elit tempor, commodo velit.
+            When I'm not working, I'm probably running, playing, tinkering with a side project or
+            experimenting with something new. The lab never really closes.
          </p>
       </div>
       <div class="mt-8 flex items-center justify-center">

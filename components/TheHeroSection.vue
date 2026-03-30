@@ -12,9 +12,7 @@
          class="text-main font-poppins max-w-screen-md text-center text-lg leading-10 md:text-xl lg:text-2xl"
       >
          I'm a
-         <span class="font-poppins-rounded text-inverse font-medium"
-            >Full-Stack Software Engineer</span
-         >
+         <span class="font-poppins-rounded text-inverse font-medium">Software Engineer</span>
          who's always tinkering with new ideas
          <!-- and pushing the boundaries of what's possible in development -->
          .
@@ -25,7 +23,7 @@
       <div class="mt-8 flex justify-center lg:mt-10">
          <div class="shadow-inverse group cursor-pointer rounded-lg">
             <a
-               href="#"
+               href="mailto:simone.sada93+website@gmail.com?subject=Let's%20connect&body=Hi%20Simone,%0A%0A"
                class="border-inverse shadow-inverse bg-accent-secondary font-poppins-rounded group-hover:-translate-0.5 text-inverse inline-flex items-center justify-center gap-1 rounded-lg border-2 p-4 px-8 transition-all duration-150"
             >
                Get in touch
