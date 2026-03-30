@@ -20,7 +20,7 @@ useHead({
 <template>
    <TheHeader />
    <NuxtPage />
-   <SectionWrapper id="contact-me" class="bg-alt border-inverse border-y-2">
+   <SectionWrapper id="contact-me" class="bg-main border-inverse border-y-2">
       <TheContactMeSection />
    </SectionWrapper>
    <TheFooter />

@@ -7,7 +7,10 @@ import TheProjectsSection from '~/components/TheProjectsSection.vue';
 </script>
 
 <template>
-   <SectionWrapper id="hero" class="lg:mt-18 bg-accent-secondary-light mt-16 md:mt-14">
+   <SectionWrapper
+      id="hero"
+      class="lg:mt-18 bg-accent-secondary-light border-inverse mt-16 border-b-2 md:mt-14"
+   >
       <TheHeroSection />
    </SectionWrapper>
    <MarqueeDivider :strings="['CODE', 'PLAY', 'EXPERIMENT', 'REPEAT']" divider="✱" :speed="0.2" />
@@ -17,7 +20,7 @@ import TheProjectsSection from '~/components/TheProjectsSection.vue';
    <SectionWrapper id="blog" class="bg-alt border-inverse border-b-2">
       <TheBlogSection />
    </SectionWrapper>
-   <SectionWrapper id="projects" class="bg-main">
+   <SectionWrapper id="projects" class="bg-alt">
       <TheProjectsSection />
    </SectionWrapper>
 </template>
