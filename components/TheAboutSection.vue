@@ -31,14 +31,14 @@ const title = 'About me';
       <div class="mt-8 flex items-center justify-center">
          <div class="grid grid-cols-2 gap-4">
             <img
-               class="shadow-inverse w-full rounded-lg"
-               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
-               alt="office content 1"
+               class="shadow-inverse aspect-[2/3] w-full rounded-lg object-cover"
+               src="../assets/images/avatar.webp"
+               alt="A picture of me"
             />
             <img
-               class="shadow-inverse mt-6 w-full rounded-lg lg:mt-12"
-               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
-               alt="office content 2"
+               class="shadow-inverse mt-6 aspect-[2/3] w-full rounded-lg object-cover lg:mt-12"
+               src="../assets/images/trekking.webp"
+               alt="A picture of me trekking"
             />
          </div>
       </div>
