@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.4.0](https://github.com/Glabdugrib/simonesada.dev/compare/simonesada.dev-v1.3.0...simonesada.dev-v1.4.0) (2026-03-30)
+
+
+### Features
+
+* complete homepage copywriting & hide incomplete sections (blog, marquee) ([198d852](https://github.com/Glabdugrib/simonesada.dev/commit/198d852dad14c84b8d9438534e72f315cb6bee9d))
+* replace placeholder images with actual assets ([d8b062c](https://github.com/Glabdugrib/simonesada.dev/commit/d8b062caec6db9e0a2e2970b3f11b0a73100b47a))
+* update color scheme ([1de9c41](https://github.com/Glabdugrib/simonesada.dev/commit/1de9c4187ee5fba4fe2d8adb1d8c75bc302b29ca))
+
+
+### Others
+
+* formatting ([a312c7e](https://github.com/Glabdugrib/simonesada.dev/commit/a312c7e483d02020c8b31bbee204fe2acdbab2a6))
+
 ## [1.3.0](https://github.com/Glabdugrib/simonesada.dev/compare/simonesada.dev-v1.2.3...simonesada.dev-v1.3.0) (2026-03-29)
 
 ### Features
