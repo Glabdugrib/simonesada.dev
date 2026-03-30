@@ -17,7 +17,7 @@ export const socialLinks: SocialLink[] = [
    },
    {
       id: 2,
-      href: 'https://github.com/Glabdugrib',
+      href: 'https://github.com/Glabdugrib?tab=repositories',
       icon: 'pi pi-github',
       label: 'GitHub',
    },
