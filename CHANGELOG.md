@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/Glabdugrib/simonesada.dev/compare/simonesada.dev-v1.5.0...simonesada.dev-v1.5.1) (2026-03-31)
+
+
+### Bug Fixes
+
+* update better-sqlite3 to v12 and remove native sqlite connector ([051ea51](https://github.com/Glabdugrib/simonesada.dev/commit/051ea5115190b65231d7f0b0cf78b82acdf72e4b))
+
 ## [1.5.0](https://github.com/Glabdugrib/simonesada.dev/compare/simonesada.dev-v1.4.0...simonesada.dev-v1.5.0) (2026-03-30)
 
 
