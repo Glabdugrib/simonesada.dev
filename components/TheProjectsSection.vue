@@ -8,14 +8,6 @@ const description =
 
 const { data: projects } = await useAsyncData('projects', () => queryCollection('projects').all());
 
-watch(
-   projects,
-   (newVal) => {
-      console.log('Project prop updated:', newVal);
-   },
-   { immediate: true },
-);
-
 const placeholder = {
    title: 'Coming Soon',
    description: 'More projects are in the pipeline',
@@ -33,7 +25,6 @@ const placeholder = {
 
 const displayedProjects = computed(() => {
    if (!projects.value) return [];
-   console.warn('Raw projects data:', projects.value?.length);
    return projects.value.length % 2 === 1 ? [...projects.value, placeholder] : projects.value;
 });
 </script>
