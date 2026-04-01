@@ -3,7 +3,7 @@ import Logo from './Logo.vue';
 import { socialLinks } from '../config/appConfig';
 
 // x-release-please-start-version
-const appVersion = '1.5.1';
+const appVersion = '1.5.2';
 // x-release-please-end
 </script>
 
