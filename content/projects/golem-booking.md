@@ -1,7 +1,7 @@
 ---
 title: 'Golem Booking'
 description: 'Lorem ipsum dolor sit amet'
-draft: true
+draft: false
 createdAt: 2026-03-30
 updatedAt: 2026-03-30
 tags: ['tag-1', 'tag-2', 'tag-3']
