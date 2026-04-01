@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/Glabdugrib/simonesada.dev/compare/simonesada.dev-v1.5.1...simonesada.dev-v1.5.2) (2026-04-01)
+
+
+### Bug Fixes
+
+* remove WIP golem-booking project from draft ([e5fce09](https://github.com/Glabdugrib/simonesada.dev/commit/e5fce0920b92985e45fbd8059f0f121bd37a55ce))
+
 ## [1.5.1](https://github.com/Glabdugrib/simonesada.dev/compare/simonesada.dev-v1.5.0...simonesada.dev-v1.5.1) (2026-03-31)
 
 
