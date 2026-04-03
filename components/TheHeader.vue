@@ -60,6 +60,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll));
          :social-links="socialLinks"
          :is-mobile-menu-open="isMobileMenuOpen"
          :is-active="isMenuItemActive"
+         @close="hideMobileMenu"
       />
    </header>
 </template>

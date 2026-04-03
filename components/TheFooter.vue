@@ -22,7 +22,7 @@ const appVersion = '1.5.2';
          <span class="text-main sm:order-0 order-2 text-sm text-gray-500 sm:text-center"
             >© 2025 Simone Sada — All Rights Reserved — v{{ appVersion }}
          </span>
-         <div class="flex gap-3 text-xl sm:mt-0 lg:gap-4">
+         <div class="flex gap-5 text-xl sm:mt-0 lg:gap-4">
             <a
                v-for="socialLink in socialLinks"
                :key="socialLink.id"

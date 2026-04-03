@@ -8,6 +8,8 @@ defineProps<{
    isMobileMenuOpen: boolean;
    isActive: (item: { name: string; href: string }) => boolean;
 }>();
+
+const emit = defineEmits<{ close: [] }>();
 </script>
 
 <template>
@@ -26,6 +28,7 @@ defineProps<{
                   :href="item.href"
                   class="max-w-18 font-poppins text-main group block py-4 pe-3 text-xl font-medium"
                   :class="{ '!text-accent-primary': isActive(item) }"
+                  @click="emit('close')"
                >
                   <span class="relative">
                      {{ item.name }}

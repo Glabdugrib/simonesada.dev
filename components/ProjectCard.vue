@@ -16,7 +16,7 @@ const defaultImage =
       <component
          :is="project.meta.hasArticle ? 'a' : 'div'"
          :href="project.path"
-         class="lg:min-h-75 relative flex h-full w-full flex-col justify-end"
+         class="lg:min-h-75 min-h-30 relative flex h-full w-full flex-col justify-end"
          :class="{ group: project.meta.hasArticle }"
       >
          <div class="absolute inset-0">
