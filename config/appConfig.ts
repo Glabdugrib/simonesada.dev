@@ -2,6 +2,9 @@ import type { Feature } from '~/types/feature.type.js';
 import type { MenuItem } from '../types/menu-item.type';
 import type { SocialLink } from '../types/social-link.type';
 
+export const mailtoHref =
+   "mailto:simone.sada93+website@gmail.com?subject=Let's%20connect&body=Hi%20Simone,%0A%0A";
+
 export const menuItems: MenuItem[] = [
    { name: 'About', href: '/#about' },
    // { name: 'Blog', href: '/blog' },
@@ -23,7 +26,7 @@ export const socialLinks: SocialLink[] = [
    },
    {
       id: 3,
-      href: "mailto:simone.sada93+website@gmail.com?subject=Let's%20connect&body=Hi%20Simone,%0A%0A",
+      href: mailtoHref,
       icon: 'pi pi-at',
       label: 'Email',
    },

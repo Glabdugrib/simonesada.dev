@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { mailtoHref } from '~/config/appConfig';
+</script>
+
 <template>
    <div class="mx-auto max-w-screen-sm text-center">
       <h2
@@ -15,7 +19,7 @@
       <div class="flex justify-center">
          <div class="shadow-inverse group cursor-pointer rounded-lg">
             <a
-               href="mailto:simone.sada93+website@gmail.com?subject=Let's%20connect&body=Hi%20Simone,%0A%0A"
+               :href="mailtoHref"
                class="border-inverse shadow-inverse bg-accent-secondary font-poppins-rounded group-hover:-translate-0.5 inline-flex items-center justify-center gap-1 rounded-lg border-2 p-4 px-8 text-white transition-all duration-150"
             >
                Get in touch
