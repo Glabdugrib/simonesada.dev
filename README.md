@@ -2,7 +2,7 @@
 
 [//]: # '// x-release-please-start-version'
 
-![Latest Release](https://img.shields.io/badge/latest_release-amber?style=plastic&label=1.5.2)
+![Latest Release](https://img.shields.io/badge/latest_release-amber?style=plastic&label=1.6.0)
 
 [//]: # '// x-release-please-end'
 
