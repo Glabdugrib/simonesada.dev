@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.6.0](https://github.com/Glabdugrib/simonesada.dev/compare/simonesada.dev-v1.5.2...simonesada.dev-v1.6.0) (2026-04-03)
+
+
+### Features
+
+* **header:** hide on scroll down, reveal on scroll up ([76e1ca4](https://github.com/Glabdugrib/simonesada.dev/commit/76e1ca49622b8dc682557ddc697b5888e725e436))
+* **header:** highlight active menu item based on visible section ([6609f67](https://github.com/Glabdugrib/simonesada.dev/commit/6609f67ae74490223f82c27e189dd473bdabb4ca))
+* **projects:** update Golem Booking card's copywriting ([56d9da7](https://github.com/Glabdugrib/simonesada.dev/commit/56d9da7e578f83f50d878ce7c571e6aa58216b91))
+
+
+### Bug Fixes
+
+* minor UI fixes ([c250ca0](https://github.com/Glabdugrib/simonesada.dev/commit/c250ca0bf822a07830a980c4882d20dc56b2d178))
+
+
+### Others
+
+* **config:** centralize mailto href in appConfig ([8c4154e](https://github.com/Glabdugrib/simonesada.dev/commit/8c4154ee3841b7ffd6a3d70ae571784285a3242c))
+
 ## [1.5.2](https://github.com/Glabdugrib/simonesada.dev/compare/simonesada.dev-v1.5.1...simonesada.dev-v1.5.2) (2026-04-01)
 
 
